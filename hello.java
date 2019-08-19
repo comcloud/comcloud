@@ -7,6 +7,7 @@ public class Hello{
 		int n = scanner.Int();
 		System.out.println(n + "的阶乘为：" + fact(n));
 	}
+	//计算阶乘方法
 	private long fact(int n){
 		if(n < 0){
 			throw new Exception("计算阶乘不可以为小于0的数");
@@ -17,4 +18,5 @@ public class Hello{
 			return fact(n-1)*n;
 		}
 	}
+	
 }
